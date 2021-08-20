@@ -1,6 +1,9 @@
-package first.sansId;
+package sans_ioc;
 
-public class CreationSanId {
+import commun.Cours;
+import commun.Etudiant;
+
+public class CreationSansId {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

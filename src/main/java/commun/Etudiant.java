@@ -1,4 +1,4 @@
-package first.sansId;
+package commun;
 
 public class Etudiant {
 

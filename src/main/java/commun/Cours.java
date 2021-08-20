@@ -1,11 +1,11 @@
-package first.sansId;
+package commun;
 
 public class Cours {
 	String nom;
 
 	@Override
 	public String toString() {
-		return "Cours [nom=" + nom + "]";
+		return "Cours [nom=" + nom + "] "+ this.hashCode() ;
 	}
 
 

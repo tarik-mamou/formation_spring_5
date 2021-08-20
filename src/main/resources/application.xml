@@ -1,19 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?avec_ioc.xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="cours" class="first.sansId.Cours">  
-      <constructor-arg value="francais"></constructor-arg>
-        <!-- collaborators and configuration for this bean go here -->
+    <bean id="cours" class="commun.Cours">
+        <constructor-arg value="francais"></constructor-arg>
     </bean>
 
-    <bean  id="etudiant" class="first.sansId.Etudiant">
-    <constructor-arg ref="cours"></constructor-arg>
-     
+    <bean id="etudiant" class="commun.Etudiant">
+        <constructor-arg ref="cours"></constructor-arg>
     </bean>
-
-    <!-- more bean definitions go here -->
 
 </beans>
