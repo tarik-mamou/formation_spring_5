@@ -1,9 +1,9 @@
-package avec_ioc.java;
+package types_injection.setter;
 
-import commun.Etudiant;
+
+import configuration_import.ConfigurationApplication1;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import types_injection.constructeur.ConfigurationApplication;
 
 public class SpringApplicationJava {
 
@@ -11,5 +11,6 @@ public class SpringApplicationJava {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(ConfigurationApplication.class);
         Etudiant etudiant = ctx.getBean("monEtudiant",Etudiant.class);
         System.out.println(etudiant);
+
     }
 }

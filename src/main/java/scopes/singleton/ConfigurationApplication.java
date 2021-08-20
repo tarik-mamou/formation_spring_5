@@ -1,9 +1,11 @@
-package avec_ioc.java;
+package scopes.singleton;
 
 import commun.Cours;
 import commun.Etudiant;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+
 @Configuration
 public class ConfigurationApplication {
     @Bean
@@ -15,6 +17,7 @@ public class ConfigurationApplication {
     public Etudiant monEtudiant(Cours cours) {
         return new Etudiant(cours);
     }
+
 
     @Bean
     public Etudiant monEtudiant2() {

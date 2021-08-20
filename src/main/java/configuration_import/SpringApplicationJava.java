@@ -1,6 +1,5 @@
 package configuration_import;
 
-import avec_ioc.java.ConfigurationApplication;
 import commun.Etudiant;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
