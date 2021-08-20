@@ -1,13 +1,15 @@
-package scopes.singleton;
+package scopes.prototype;
 
 import commun.Cours;
 import commun.Etudiant;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class ConfigurationApplication {
     @Bean
+    @Scope("prototype")
     public Cours monCours() {
         return new Cours("francais");
     }

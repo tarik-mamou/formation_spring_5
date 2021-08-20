@@ -1,4 +1,4 @@
-package commun;
+package autowiring;
 
 public class Cours {
 
